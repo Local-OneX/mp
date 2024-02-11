@@ -59,43 +59,6 @@
         return String.fromCharCode(36) + hiddenBorder;
         }
     }
-    
-
-
-    function convertColCode(colCode) {
-        if (colCode == undefined) return ''
-        var splitted = colCode.split('-')
-        return hideBorder(splitted[0]) + '-' + splitted[1]
-    }
-
-    const knownColorFills = new Map();
-    fetch('colorFills.txt').then(resp => resp.text()).then(data => {
-        const skins = data.split(',').filter(name => name.length > 0);
-        if (skins.length === 0) return;
-        byId('gallery-btn').style.display = 'inline-block';
-        const stamp = Date.now();
-        for (const skin of skins) knownColorFills.set(skin, stamp);
-        for (const i of knownColorFills.keys()) {
-            if (knownColorFills.get(i) !== stamp) knownColorFills.delete(i);
-        }
-    });
-    
-    
-    function checkColCode(colCode) {
-        const colCodes = Array.from(knownColorFills.keys()).sort();
-        if (colCode === 'undefined') return false
-        /*fetch('colorFills.txt').then(resp => resp.text()).then(data => {
-            var colCodes = data.split(',')
-            console.log(colCode, colCodes[0])
-        */
-        if (colCodes.includes(colCode)) {
-            return true
-        }
-        
-        else {
-            return false
-        }
-    }
 
     class Sound {
         constructor(src, volume, maximum) {
