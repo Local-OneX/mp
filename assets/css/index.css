@@ -137,7 +137,7 @@ input[type=checkbox] {
 	top: 70%;
 	left: calc(100% - 235px);
 	transform: translate(-50%, -50%);
-	height: 60%
+	height: 100%
 
 }
 
@@ -197,7 +197,7 @@ hr {
 	border: 0px;
 	outline: none;
 	color: #fff;
-	height: 100px;
+	height: 40px;
 	text-indent: 12px;
 	left: 10px;
 	width: 300px;
