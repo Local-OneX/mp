@@ -126,18 +126,18 @@ input[type=checkbox] {
 }
 
 #cojarchyChat {
-	width: 500px;
-	background: none;
-	border-top: none;
-	border-bottom: none;
-	margin: 10px auto;
-	border-radius: 30px;
-	padding: 5px 15px 5px 15px;
-	position: absolute;
-	top: 70%;
-	left: calc(100% - 235px);
-	transform: translate(-50%, -50%);
-	height: 100%
+    width: 500px;
+    background: none;
+    border-top: none;
+    border-bottom: none;
+    margin: 10px auto;
+    border-radius: 30px;
+    padding: 5px 15px 5px 15px;
+    position: absolute;
+    top: 70%;
+    left: calc(100% - 235px);
+    transform: translate(-50%, -50%);
+    height: 60%
 
 }
 
